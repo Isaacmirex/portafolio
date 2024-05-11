@@ -3,16 +3,16 @@
   <a href="" target="_blank">IsaacRomeroDev</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="./Images/Isaac-img.png" />
 </div>
 
 <br/>
 
 
 
-## TL;DR
+## Clonar Original
 
-Puedes bifurcar este repositorio para modificar y hacer cambios por tu cuenta. [Isaac Romero](https://github.com/Isaacmirex). ¡Gracias!
+Puedes bifurcar este repositorio para modificar y hacer cambios por tu cuenta. del creador original [clik here](https://github.com/soumyajit4419/Portfolio). ¡Gracias!
 
 ## Construido Con
 
@@ -57,7 +57,7 @@ Encontrarás todos los componentes utilizados y podrás editar tu información e
 ¡Dale una ⭐ si te gusta este sitio web!
 
 
-# CEO Isaac Romero
+#  Perfil Isaac Romero
 
 ## Herramientas
 
