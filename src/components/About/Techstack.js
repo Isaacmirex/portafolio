@@ -1,69 +1,36 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { DiJava, DiJavascript1, DiPython, DiReact, DiMongodb, DiNodejs } from "react-icons/di";
+import { SiPostgresql, SiFirebase, SiMicrosoftazure, SiSqlite, SiTailwindcss, SiTensorflow, SiDjango, SiDocker, SiCsharp, SiFlutter } from "react-icons/si";
 
 function Techstack() {
+  const techStack = [
+    { icon: <SiFlutter />, name: "Flutter" },
+    { icon: <DiReact />, name: "React" },
+    { icon: <SiDjango />, name: "Django" },
+    { icon: <SiCsharp />, name: "C#" },
+    { icon: <DiJava />, name: "Java" },
+    { icon: <DiJavascript1 />, name: "JavaScript" },
+    { icon: <DiPython />, name: "Python" },
+    { icon: <SiTensorflow />, name: "Scikit-learn" }, // Placeholder as scikit-learn icon is not available
+    { icon: <SiMicrosoftazure />, name: "Azure" },
+    { icon: <SiFirebase />, name: "Firebase" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
+    { icon: <DiMongodb />, name: "MongoDB" },
+    { icon: <SiSqlite />, name: "SQLite" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+    { icon: <SiTensorflow />, name: "TensorFlow" },
+    { icon: <DiNodejs />, name: "Express.js" }, // Placeholder as Express.js icon is not available
+    { icon: <SiDocker />, name: "Docker" }
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
+      {techStack.map((tech, index) => (
+        <Col key={index} xs={4} md={2} className="tech-icons">
+          {tech.icon}
+        </Col>
+      ))}
     </Row>
   );
 }
