@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -10,23 +11,25 @@ import frutas from "../../Assets/Projects/secador_frutas.png";
 import uv from "../../Assets/Projects/luces_uv.png";
 
 function Projects() {
+  const { t } = useTranslation(); // Utiliza 't' para la traducción
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          {t('projects.recent_works')} <strong className="purple">{t('projects.recent_projects')}</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          {t('projects.recent_projects')}
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={estres}
               isBlog={false}
-              title="Stress Detector IA"
-              description="A device designed to measure stress levels in students at UTN. The data is uploaded to a PostgreSQL backend, which then feeds into an AI model. This model predicts stress based on the Perceived Stress Scale test and biometric data"
+              title={t('projects.stress_detector.title')}
+              description={t('projects.stress_detector.description')}
               demoLink="https://controlansiedadutn.web.app/Home"
               ghLink="https://github.com/Isaacmirex/fronted_sensores_utn"
             />
@@ -36,8 +39,8 @@ function Projects() {
             <ProjectCard
               imgPath={goteo}
               isBlog={false}
-              title="Drip Irrigation"
-              description="A device was created to detect soil moisture and activate irrigation automatically based on a set schedule. Alternatively, it can be manually controlled by the user. The programming was developed using Arduino IDE, and the system utilizes moisture sensors, solenoid valves, relays, and other components."
+              title={t('projects.drip_irrigation.title')}
+              description={t('projects.drip_irrigation.description')}
               ghLink="https://github.com/Isaacmirex"
             />
           </Col>
@@ -46,8 +49,8 @@ function Projects() {
             <ProjectCard
               imgPath={backend}
               isBlog={false}
-              title="UTN Backend"
-              description="API was developed using Express, focused on generating a template to be used in any enterprise software. This backend includes modules for users, school activities, teachers, classrooms, and roles."
+              title={t('projects.utn_backend.title')}
+              description={t('projects.utn_backend.description')}
               ghLink="https://github.com/Isaacmirex/app_backend_utn_v2"              
             />
           </Col>
@@ -56,8 +59,8 @@ function Projects() {
             <ProjectCard
               imgPath={mongo}
               isBlog={false}
-              title="Electronic Invoicing API with MongoDB"
-              description="application that allows connectivity with clients, products, and records. This API serves as a template for developing a robust backend. Its purpose is to leverage the technology of a NoSQL database."
+              title={t('projects.mongo_invoicing.title')}
+              description={t('projects.mongo_invoicing.description')}
               ghLink="https://github.com/Isaacmirex/facturacionApiMongoDB"
             />
           </Col>
@@ -66,8 +69,8 @@ function Projects() {
             <ProjectCard
               imgPath={frutas}
               isBlog={false}
-              title="Fruit Dehydrator"
-              description="A device designed to aid in the dehydration of fruits. It is controlled by an Arduino Nano. The device manages input and output fans, a nickel-chromium heating element, and responds to temperature and humidity levels sensed by the sensor. Depending on these readings, relays are activated to regulate heat output: if the temperature is too high for fruit dehydration, the heat output is reduced; if it's too low, the heating element and air distribution fans are activated."
+              title={t('projects.fruit_dehydrator.title')}
+              description={t('projects.fruit_dehydrator.description')}
               ghLink="https://github.com/Isaacmirex"
             />
           </Col>
@@ -75,12 +78,9 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={uv}
-              // isBlog={true}
-              title="UV Light Disinfectant Invento"
-              description="Using a mobile app developed by the inventor, UV light in a fruit disinfection box is controlled. An Arduino with a Bluetooth module receives data sent from the phone and executes intensity control commands for the UV light."
+              title={t('projects.uv_disinfectant.title')}
+              description={t('projects.uv_disinfectant.description')}
               ghLink="https://github.com/Isaacmirex"
-              // ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
         </Row>
@@ -90,3 +90,4 @@ function Projects() {
 }
 
 export default Projects;
+

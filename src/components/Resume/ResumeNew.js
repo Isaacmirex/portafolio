@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/CV-IsaacRomero-Engish.pdf";
+import pdfEnglish from "../../Assets/../Assets/CV-IsaacRomero-Engish.pdf";
+import pdfSpanish from "../../Assets/../Assets/CV-IsaacRomero-Spanish.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -22,17 +23,26 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={pdfEnglish}
+            target="_blank"
+            style={{ maxWidth: "250px", marginRight: "10px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV (English)
+          </Button>
+          <Button
+            variant="primary"
+            href={pdfSpanish}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Descargar CV (Español)
           </Button>
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
+          <Document file={pdfEnglish} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
@@ -40,12 +50,21 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={pdfEnglish}
+            target="_blank"
+            style={{ maxWidth: "250px", marginRight: "10px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV (English)
+          </Button>
+          <Button
+            variant="primary"
+            href={pdfSpanish}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Descargar CV (Español)
           </Button>
         </Row>
       </Container>

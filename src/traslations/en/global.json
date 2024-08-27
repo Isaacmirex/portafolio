@@ -1,0 +1,77 @@
+{
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "resume": "Resume"
+    },
+    "home": {
+      "hi_there": "Hi There!",
+      "im_name": "I'M",
+      "isaac_romero": "Isaac Romero (CatCoatDev)"
+    },
+    "home2": {
+      "let_me_introduce_myself": "LET ME INTRODUCE MYSELF",
+      "about_description": "I am a person who innovates with the product, investing in a living software, managing all possible variables to have a quality product, from people to software, through hardware programming. 💭",
+      "skills": "I am fluent in classics like",
+      "interests": "My field of interest's are building new",
+      "products": "Hardware and Software Products",
+      "ai_apis": "Innovating with AI APIs, Managing People, Transitioning IDEAS into Products.",
+      "node_react": "Whenever possible, I apply my passion for developing products with Node.js and React.js. I aim to lead innovative ideas through AI applications, integrating hardware for enhanced quality of life. I proficiently navigate Azure, Express, Python, ArduinoID, Render, Railway, Firebase, Figma, .Net, Flutter and More.."
+    },
+    "about": {
+      "know": "Know Who",
+      "im": "I'M",
+      "professional_skillset": "Professional Skillset",
+      "tools": "Tools",
+      "i_use": "I use"
+    },
+    "aboutCard": {
+      "hi_everyone": "Hi Everyone, I am",
+      "from": "from",
+      "work": "I work as a software engineer on projects at MyThoughts.inc.",
+      "graduated": "I graduated as a Software engineer from the Technical University of the North",
+      "apart_from_coding": "Apart from coding, some other activities that I love to do!",
+      "reading_psychology": "Reading about psychology",
+      "reading_poetry": "Reading poetry",
+      "artificial_intelligence": "Artificial Intelligence",
+      "quote": "Think about something, reflect on it, adapt to conflicts, and live...",
+      "quote_author": "Isaac Romero"
+    },
+    "projects": {
+      "recent_works": "My Recent Works",
+      "recent_projects": "Here are a few projects I've worked on recently.",
+      "stress_detector": {
+        "title": "Stress Detector IA",
+        "description": "A device designed to measure stress levels in students at UTN. The data is uploaded to a PostgreSQL backend, which then feeds into an AI model. This model predicts stress based on the Perceived Stress Scale test and biometric data."
+      },
+      "drip_irrigation": {
+        "title": "Drip Irrigation",
+        "description": "A device was created to detect soil moisture and activate irrigation automatically based on a set schedule. Alternatively, it can be manually controlled by the user. The programming was developed using Arduino IDE, and the system utilizes moisture sensors, solenoid valves, relays, and other components."
+      },
+      "utn_backend": {
+        "title": "UTN Backend",
+        "description": "API was developed using Express, focused on generating a template to be used in any enterprise software. This backend includes modules for users, school activities, teachers, classrooms, and roles."
+      },
+      "mongo_invoicing": {
+        "title": "Electronic Invoicing API with MongoDB",
+        "description": "An application that allows connectivity with clients, products, and records. This API serves as a template for developing a robust backend. Its purpose is to leverage the technology of a NoSQL database."
+      },
+      "fruit_dehydrator": {
+        "title": "Fruit Dehydrator",
+        "description": "A device designed to aid in the dehydration of fruits. It is controlled by an Arduino Nano. The device manages input and output fans, a nickel-chromium heating element, and responds to temperature and humidity levels sensed by the sensor."
+      },
+      "uv_disinfectant": {
+        "title": "UV Light Disinfectant Invento",
+        "description": "Using a mobile app developed by the inventor, UV light in a fruit disinfection box is controlled. An Arduino with a Bluetooth module receives data sent from the phone and executes intensity control commands for the UV light."
+      }
+    },
+    "footer": {
+      "copyright": "Copyright © Isaac Romero (CatCoatCode)",
+      "connect_with_me": "FIND ME ON",
+      "feel_free_to": "Feel free to",
+      "connect": "connect"
+    }
+  }
+  
+  

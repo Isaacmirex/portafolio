@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next"; // Importa useTranslation
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
@@ -9,7 +10,7 @@ import Resume from "./components/Resume/ResumeNew";
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
+  Routes, 
   Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
@@ -18,6 +19,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  const { i18n } = useTranslation(); // Obtén la función de cambio de idioma
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
@@ -27,6 +29,10 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng); // Cambia el idioma
+  };
 
   return (
     <Router>
@@ -48,3 +54,4 @@ function App() {
 }
 
 export default App;
+

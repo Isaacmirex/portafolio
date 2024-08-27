@@ -1,10 +1,10 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiVisualstudiocode, SiPostman, SiMicrosoftteams, SiWindows, SiVisualstudio } from "react-icons/si";
+import { SiVisualstudiocode, SiPostman, SiMicrosoftteams, SiApple, SiVisualstudio } from "react-icons/si";
 
 function Toolstack() {
   const tools = [
-    { icon: <SiWindows />, name: "Windows" },
+    { icon: <SiApple />, name: "macOS" },
     { icon: <SiPostman />, name: "Postman" },
     { icon: <SiVisualstudiocode />, name: "VSCode" },
     { icon: <SiVisualstudio />, name: "Visual Studio" },
@@ -23,3 +23,5 @@ function Toolstack() {
 }
 
 export default Toolstack;
+
+

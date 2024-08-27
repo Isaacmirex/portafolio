@@ -1,0 +1,77 @@
+{
+    "navbar": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "projects": "Proyectos",
+      "resume": "Currículum"
+    },
+    "home": {
+      "hi_there": "¡Hola!",
+      "im_name": "SOY",
+      "isaac_romero": "Isaac Romero (CatCoatDev)"
+    },
+    "home2": {
+      "let_me_introduce_myself": "PERMÍTEME PRESENTARME",
+      "about_description": "Soy una persona que innova con el producto, invirtiendo en un software vivo, gestionando todas las variables posibles para tener un producto de calidad, desde personas hasta software, pasando por la programación de hardware. 💭",
+      "skills": "Soy programador en:",
+      "interests": "Mis áreas de interés son la construcción de nuevos",
+      "products": "Productos de Hardware y Software",
+      "ai_apis": "Innovando con APIs de IA, gestionando personas, transformando IDEAS en Productos.",
+      "node_react": "Siempre que es posible, aplico mi pasión por desarrollar productos con Node.js y React.js. Mi objetivo es liderar ideas innovadoras a través de aplicaciones de IA, integrando hardware para mejorar la calidad de vida. Navego con habilidad en Azure, Express, Python, ArduinoID, Render, Railway, Firebase, Figma, .Net, Flutter y más."
+    },
+    "about": {
+      "know": "Conoce Quién",
+      "im": "SOY",
+      "professional_skillset": "Habilidades Profesionales",
+      "tools": "Herramientas",
+      "i_use": "que uso"
+    },
+    "aboutCard": {
+      "hi_everyone": "Hola a Todos, soy",
+      "from": "de",
+      "work": "Trabajo como ingeniero de software en proyectos de MyThoughts.inc.",
+      "graduated": "Me gradué como ingeniero de Software de la Universidad Técnica del Norte",
+      "apart_from_coding": "¡Además de programar, hay otras actividades que amo hacer!",
+      "reading_psychology": "Leer sobre psicología",
+      "reading_poetry": "Leer poesía",
+      "artificial_intelligence": "Inteligencia Artificial",
+      "quote": "Piensa en algo, reflexiona sobre ello, adáptate a los conflictos y vive...",
+      "quote_author": "Isaac Romero"
+    },
+    "projects": {
+      "recent_works": "Mis Trabajos Recientes",
+      "recent_projects": "Aquí hay algunos proyectos en los que he trabajado recientemente.",
+      "stress_detector": {
+        "title": "Detector de Estrés IA",
+        "description": "Un dispositivo diseñado para medir los niveles de estrés en estudiantes de la UTN. Los datos se cargan en un backend de PostgreSQL, que luego alimenta un modelo de IA. Este modelo predice el estrés basado en la prueba de la Escala de Estrés Percibido y datos biométricos."
+      },
+      "drip_irrigation": {
+        "title": "Riego por Goteo",
+        "description": "Se creó un dispositivo para detectar la humedad del suelo y activar el riego automáticamente según un horario establecido. Alternativamente, puede ser controlado manualmente por el usuario. La programación se desarrolló utilizando Arduino IDE, y el sistema utiliza sensores de humedad, válvulas solenoides, relés y otros componentes."
+      },
+      "utn_backend": {
+        "title": "Backend UTN",
+        "description": "Se desarrolló una API usando Express, centrada en generar una plantilla para ser utilizada en cualquier software empresarial. Este backend incluye módulos para usuarios, actividades escolares, profesores, aulas y roles."
+      },
+      "mongo_invoicing": {
+        "title": "API de Facturación Electrónica con MongoDB",
+        "description": "Una aplicación que permite la conectividad con clientes, productos y registros. Esta API sirve como una plantilla para desarrollar un backend robusto. Su propósito es aprovechar la tecnología de una base de datos NoSQL."
+      },
+      "fruit_dehydrator": {
+        "title": "Deshidratador de Frutas",
+        "description": "Un dispositivo diseñado para ayudar en la deshidratación de frutas. Está controlado por un Arduino Nano. El dispositivo gestiona ventiladores de entrada y salida, un elemento calefactor de níquel-cromo, y responde a los niveles de temperatura y humedad detectados por el sensor."
+      },
+      "uv_disinfectant": {
+        "title": "Invento Desinfectante con Luz UV",
+        "description": "Mediante una aplicación móvil desarrollada por el inventor, se controla la luz UV en una caja de desinfección de frutas. Un Arduino con un módulo Bluetooth recibe los datos enviados desde el teléfono y ejecuta los comandos de control de intensidad para la luz UV."
+      }
+    },
+    "footer": {
+      "copyright": "Derechos de Autor © Isaac Romero (CatCoatCode)",
+      "connect_with_me": "ENCUÉNTRAME EN",
+      "feel_free_to": "Siéntete libre de",
+      "connect": "conectar"
+    }
+  }
+  
+  

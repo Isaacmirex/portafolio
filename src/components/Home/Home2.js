@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/profile.jpg";
 import Tilt from "react-parallax-tilt";
@@ -10,42 +11,33 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
+  const { t } = useTranslation(); // Utiliza 't' para la traducción
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              {t('home2.let_me_introduce_myself')}
             </h1>
             <p className="home-about-body">
-            I am a person who innovates with the product, investing in a living software, managing all possible variables to have a quality product, from people to software, through hardware programming. 💭
+              {t('home2.about_description')}
               <br />
-              <br />I am fluent in classics like
+              <br />
+              {t('home2.skills')}
               <i>
-                <b className="purple"> C#,Arduino,Java,Dart,Javascript and Python. </b>
+                <b className="purple"> C#, Arduino, Java, Dart, JavaScript, and Python. </b>
               </i>
               <br />
               <br />
-              My field of interest's are building new &nbsp;
+              {t('home2.interests')} &nbsp;
               <i>
-                <b className="purple">Hardware and Software Products,</b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Innovating with AI APIs, Managing People, Transitioning IDEAS into Products.
-                </b>
+                <b className="purple">{t('home2.products')}</b> {t('home2.ai_apis')}
               </i>
-
               <br />
               <br />
-              Whenever possible, I apply my passion for developing products with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  React.js
-                </b>
-                </i>. I aim to lead innovative ideas through <b className="purple">AI</b> applications, integrating hardware for enhanced quality of life. I proficiently navigate <b className="purple">Azure, Express, Python, ArduinoID, Render, Raliway, Firebase, Figma, .Net, Flutter and More.. </b> for exceptional user experiences.
-
+              {t('home2.node_react')}
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -56,9 +48,9 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>{t('footer.connect_with_me')}</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              {t('footer.feel_free_to')} <span className="purple">{t('footer.connect')}</span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -66,27 +58,17 @@ function Home2() {
                   href="https://github.com/Isaacmirex"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li> */}
               <li className="social-icons">
                 <a
-                  href="www.linkedin.com/in/isaacromero-catcoatdev"
+                  href="https://www.linkedin.com/in/isaacromero-catcoatdev"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -108,4 +90,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

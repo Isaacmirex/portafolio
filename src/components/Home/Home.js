@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
@@ -6,6 +7,8 @@ import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home() {
+  const { t } = useTranslation(); // Utiliza 't' para la traducción
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -14,15 +17,15 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                {t('home.hi_there')}{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> Isaac Romero (CatCoatDev)</strong>
+                {t('home.im_name')}
+                <strong className="main-name"> {t('home.isaac_romero')}</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -47,3 +50,4 @@ function Home() {
 }
 
 export default Home;
+

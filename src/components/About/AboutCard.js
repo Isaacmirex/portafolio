@@ -1,39 +1,42 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
+  const { t } = useTranslation(); // Utiliza 't' para la traducción
+
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Isaac Romero </span>
-            from <span className="purple"> Ibarra, Ecuador.</span>
+            {t('aboutCard.hi_everyone')} <span className="purple">Isaac Romero </span>
+            {t('aboutCard.from')} <span className="purple"> Ibarra, Ecuador.</span>
             <br />
-            I work as a software engineer on projects at MyThoughts.inc.
+            {t('aboutCard.work')}
             <br />
-            I graduated as a Software engineer from the Technical University of the North
+            {t('aboutCard.graduated')}
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            {t('aboutCard.apart_from_coding')}
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Reading about psychology
+              <ImPointRight /> {t('aboutCard.reading_psychology')}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Reading poetry
+              <ImPointRight /> {t('aboutCard.reading_poetry')}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Artificial Intelligence
+              <ImPointRight /> {t('aboutCard.artificial_intelligence')}
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-          "Think about something, reflect on it, adapt to conflicts, and live..."{" "}
+            "{t('aboutCard.quote')}"{" "}
           </p>
-          <footer className="blockquote-footer"> Isaac Romero.</footer>
+          <footer className="blockquote-footer">{t('aboutCard.quote_author')}</footer>
         </blockquote>
       </Card.Body>
     </Card>
@@ -41,3 +44,4 @@ function AboutCard() {
 }
 
 export default AboutCard;
+
